@@ -1,16 +1,9 @@
-package com.example.androidpractponamarev;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MyApp";
+private static final String TAG = "MyApp";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String text = "App created"
+        String text = "App created";
         Context context = getApplicationContext();
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
         Log.i(TAG, text);
@@ -18,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        String text = "App started"
+        String text = "App started";
         Context context = getApplicationContext();
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
         Log.i(TAG, text);
@@ -36,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        String text = "App paused"
+        String text = "App paused";
         Context context = getApplicationContext();
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
         Log.i(TAG, text);
@@ -46,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         Context context = getApplicationContext();
-        String text = "App stopped"
+        String text = "App stopped";
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
-        Log.w(TAG. text)
+        Log.w(TAG, text);
         Log.i(TAG, text);
         super.onStop();
     }
@@ -56,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        String text = "App destroyed"
+        String text = "App destroyed";
         Context context = getApplicationContext();
         Toast.makeText(context, text, Toast.LENGTH_LONG).show();
         Log.i(TAG, text);
